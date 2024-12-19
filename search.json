@@ -4,18 +4,18 @@
     "href": "index.html",
     "title": "WaterBench - a list of water modelling reference datasets",
     "section": "",
-    "text": "A light-weight, versatile XYZ tile server built with Flask and Rasterio\n\n\n\n\nPython package for reading and writing MIKE files\n\n\n\n\nPython package for reading and writing MIKE 1D files\n\n\n\n\nPython package for model skill assessment\n\n\n\n\n\n\nBenchmark dataset for MIKE 21 HD\n\n\n\nBenchmark dataset for MIKE 21 HD"
+    "text": "Some text\n\n\n\n\n\nBenchmark dataset for MIKE 21 HD\n\n\n\nBenchmark dataset for MIKE 21 HD"
   },
   {
-    "objectID": "index.html#open-source",
-    "href": "index.html#open-source",
+    "objectID": "index.html#the-idea",
+    "href": "index.html#the-idea",
     "title": "WaterBench - a list of water modelling reference datasets",
     "section": "",
-    "text": "A light-weight, versatile XYZ tile server built with Flask and Rasterio\n\n\n\n\nPython package for reading and writing MIKE files\n\n\n\n\nPython package for reading and writing MIKE 1D files\n\n\n\n\nPython package for model skill assessment"
+    "text": "Some text"
   },
   {
-    "objectID": "index.html#open-data",
-    "href": "index.html#open-data",
+    "objectID": "index.html#published-datasets",
+    "href": "index.html#published-datasets",
     "title": "WaterBench - a list of water modelling reference datasets",
     "section": "",
     "text": "Benchmark dataset for MIKE 21 HD\n\n\n\nBenchmark dataset for MIKE 21 HD"
