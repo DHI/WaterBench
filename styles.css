@@ -1,0 +1,7 @@
+/* css styles */
+
+/* a in a h3 should have no underline and normal color*/
+a {
+    text-decoration: none;
+    color: black;
+}
