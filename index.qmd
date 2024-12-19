@@ -7,9 +7,14 @@ page-layout: full
 
 ::: {.g-col-6}
 
-## The idea
+## WaterBench
 
-Some text
+The WaterBench datasets are aimed at supporting educational, research, and exploratory activities, such as:
+
+* Experimenting with water modeling using MIKE Powered by DHI.
+* Validating hydrodynamic model outputs with observational data.
+* Developing methods for automatically calibrating model parameters.
+* Building data-driven models, including machine learning surrogates of the MIKE simulation results.
 
 :::
 
@@ -18,12 +23,16 @@ Some text
 ## Published datasets
 
 ### [MIKE21HD-Oresund](https://github.com/DHI/WaterBench-MIKE21HD-Oresund/) 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14160710.svg)](https://doi.org/10.5281/zenodo.14160710)
 
-Benchmark dataset for MIKE 21 HD
+> DHI. (2024). Hydrodynamic model of Øresund: MIKE21 model setup, outputs and observation data (1.0) [Data set]. Zenodo. [https://doi.org/10.5281/zenodo.14160710](https://doi.org/10.5281/zenodo.14160710)
 
 ### [MIKE21HD-ConceptionBay](https://github.com/DHI/WaterBench-MIKE21HD-ConceptionBay) 
 
-Benchmark dataset for MIKE 21 HD
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14504931.svg)](https://doi.org/10.5281/zenodo.14504931)
+
+> DHI. (2024). Hydrodynamic model of Conception Bay: MIKE21 model setup, outputs and observation data (1.0) [Data set]. Zenodo. [https://doi.org/10.5281/zenodo.14504931](https://doi.org/10.5281/zenodo.14504931)
+
 
 :::
 
