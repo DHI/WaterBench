@@ -9,9 +9,9 @@ page-layout: full
 
 ## WaterBench
 
-The WaterBench datasets are aimed at supporting educational, research, and exploratory activities, such as:
+The [DHI](https://www.dhigroup.com) WaterBench datasets are aimed at supporting educational, research, and exploratory activities, such as:
 
-* Experimenting with water modeling using MIKE Powered by DHI.
+* Experimenting with water modeling using [MIKE Powered by DHI](https://www.dhigroup.com/technologies/mikepoweredbydhi).
 * Validating hydrodynamic model outputs with observational data.
 * Developing methods for automatically calibrating model parameters.
 * Building data-driven models, including machine learning surrogates of the MIKE simulation results.
@@ -23,13 +23,17 @@ The WaterBench datasets are aimed at supporting educational, research, and explo
 ## Published datasets
 
 ### [MIKE21HD-Oresund](https://github.com/DHI/WaterBench-MIKE21HD-Oresund/) 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14160710.svg)](https://doi.org/10.5281/zenodo.14160710)
+[![](https://zenodo.org/badge/DOI/10.5281/zenodo.14160710.svg)](https://doi.org/10.5281/zenodo.14160710)
+
+![](https://github.com/DHI/WaterBench-MIKE21HD-Oresund/blob/main/figures/geometry.png)
 
 > DHI. (2024). Hydrodynamic model of Øresund: MIKE21 model setup, outputs and observation data (1.0) [Data set]. Zenodo. [https://doi.org/10.5281/zenodo.14160710](https://doi.org/10.5281/zenodo.14160710)
 
 ### [MIKE21HD-ConceptionBay](https://github.com/DHI/WaterBench-MIKE21HD-ConceptionBay) 
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14504931.svg)](https://doi.org/10.5281/zenodo.14504931)
+[![](https://zenodo.org/badge/DOI/10.5281/zenodo.14504931.svg)](https://doi.org/10.5281/zenodo.14504931)
+
+![](https://github.com/DHI/WaterBench-MIKE21HD-ConceptionBay/blob/main/figures/geometry.png)
 
 > DHI. (2024). Hydrodynamic model of Conception Bay: MIKE21 model setup, outputs and observation data (1.0) [Data set]. Zenodo. [https://doi.org/10.5281/zenodo.14504931](https://doi.org/10.5281/zenodo.14504931)
 
