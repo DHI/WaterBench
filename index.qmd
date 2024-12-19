@@ -1,0 +1,55 @@
+---
+page-layout: full
+---
+
+
+::: {.grid}
+
+::: {.g-col-6}
+
+## Open source
+
+### {{< fa brands python >}} [Terracotta](https://terracotta-python.readthedocs.io/en/latest/)
+
+[![](https://terracotta-python.readthedocs.io/en/latest/_static/logo.svg)](https://terracotta-python.readthedocs.io/en/latest/)
+
+A light-weight, versatile XYZ tile server built with Flask and Rasterio
+
+### {{< fa brands python >}} [MIKE IO](https://dhi.github.io/mikeio)
+
+[![](https://raw.githubusercontent.com/DHI/mikeio/main/images/logo/PNG/MIKE-IO-Logo-Pos-RGB-nomargin.png)](https:dhi.github.io/mikeio)
+
+Python package for reading and writing MIKE files
+
+### {{< fa brands python >}} [MIKE IO 1D](https://dhi.github.io/mikeio1d)
+
+[![](https://raw.githubusercontent.com/DHI/mikeio1d/main/images/logo/MIKE-IO-1D-Logo-Pos-RGB-nomargin.png)](https:dhi.github.io/mikeio1d)
+
+Python package for reading and writing MIKE 1D files
+
+### {{< fa brands python >}} [ModelSkill](https://dhi.github.io/modelskill)
+
+[![](https://raw.githubusercontent.com/DHI/modelskill/main/images/logo/modelskill.svg)](https:dhi.github.io/modelskill)
+
+Python package for model skill assessment
+
+:::
+
+::: {.g-col-6}
+
+## Open data
+
+### [MIKE21HD-Oresund](https://github.com/DHI/WaterBench-MIKE21HD-Oresund/) 
+
+Benchmark dataset for MIKE 21 HD
+
+### [MIKE21HD-ConceptionBay](https://github.com/DHI/WaterBench-MIKE21HD-ConceptionBay) 
+
+Benchmark dataset for MIKE 21 HD
+
+:::
+
+:::
+
+
+

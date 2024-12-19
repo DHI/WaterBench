@@ -1,0 +1,29 @@
+project:
+  type: website
+preview:
+  port: 3000
+
+website:
+  title: "WaterBench - a list of water modelling reference datasets"
+  
+  navbar:
+    right:
+      - icon: github
+        href: https://github.com/WaterBench
+
+  page-footer: 
+    left: "Copyright 2024, DHI" 
+    right: 
+      - icon: github
+        href: https://github.com/WaterBench
+      - icon: linkedin
+        href: https://www.linkedin.com/company/dhi/
+format:
+  html:
+    theme: 
+      - brand
+      - lux
+    css: styles.css
+
+
+
