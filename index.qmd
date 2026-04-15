@@ -2,11 +2,6 @@
 page-layout: full
 ---
 
-
-::: {.grid}
-
-::: {.g-col-6}
-
 ## WaterBench
 
 The [DHI](https://www.dhigroup.com) WaterBench datasets are aimed at supporting educational, research, and exploratory activities, such as:
@@ -16,31 +11,77 @@ The [DHI](https://www.dhigroup.com) WaterBench datasets are aimed at supporting 
 * Developing methods for automatically calibrating model parameters.
 * Building data-driven models, including machine learning surrogates of the MIKE simulation results.
 
+Each dataset is built around a realistic case and includes model setup files, input data, selected outputs, observations, and example notebooks for validation and analysis. Published on [Zenodo](https://zenodo.org) and [GitHub](https://github.com/DHI) in a standardized structure, the datasets support reuse, reproducibility, education, and research.
+
+## Overview
+
+::: {.column-body}
+
+| Case | Type | Links |
+|------|------|:-----:|
+| [MIKESHE-Skjern](#mikeshe-skjern) | Integrated hydrology | [![](https://zenodo.org/badge/DOI/10.5281/zenodo.18376532.svg){height=20}](https://doi.org/10.5281/zenodo.18376532) [![](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white){height=20}](https://github.com/DHI/WaterBench-MIKESHE-Skjern) |
+| [MIKE21HD-SouthernNorthSea](#mike21hd-southernnorthsea) | Hydrodynamics | [![](https://zenodo.org/badge/DOI/10.5281/zenodo.14929387.svg){height=20}](https://doi.org/10.5281/zenodo.14929387) [![](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white){height=20}](https://github.com/DHI/WaterBench-MIKE21HD-SouthernNorthSea) |
+| [MIKE21SW-SouthernNorthSea](#mike21sw-southernnorthsea) | Spectral waves | [![](https://zenodo.org/badge/DOI/10.5281/zenodo.17413569.svg){height=20}](https://doi.org/10.5281/zenodo.17413569) [![](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white){height=20}](https://github.com/DHI/WaterBench-MIKE21SW-SouthernNorthSea) |
+| [MIKE21HD-ConceptionBay](#mike21hd-conceptionbay) | Hydrodynamics | [![](https://zenodo.org/badge/DOI/10.5281/zenodo.14504931.svg){height=20}](https://doi.org/10.5281/zenodo.14504931) [![](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white){height=20}](https://github.com/DHI/WaterBench-MIKE21HD-ConceptionBay) |
+| [MIKE21HD-Oresund](#mike21hd-oresund) | Hydrodynamics | [![](https://zenodo.org/badge/DOI/10.5281/zenodo.14160710.svg){height=20}](https://doi.org/10.5281/zenodo.14160710) [![](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white){height=20}](https://github.com/DHI/WaterBench-MIKE21HD-Oresund) |
+| [TimeSeries-WWTPInflow](#timeseries-wwtpinflow) | Time series | [![](https://zenodo.org/badge/DOI/10.5281/zenodo.15301164.svg){height=20}](https://doi.org/10.5281/zenodo.15301164) [![](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white){height=20}](https://github.com/DHI/WaterBench-TimeSeries-WWTPINflow) |
+
 :::
 
-::: {.g-col-6}
+---
 
-## Published datasets
+### MIKESHE-Skjern {#mikeshe-skjern}
 
-### [MIKE21HD-Oresund](https://github.com/DHI/WaterBench-MIKE21HD-Oresund/) 
-[![](https://zenodo.org/badge/DOI/10.5281/zenodo.14160710.svg)](https://doi.org/10.5281/zenodo.14160710)
+[![](https://zenodo.org/badge/DOI/10.5281/zenodo.18376532.svg)](https://doi.org/10.5281/zenodo.18376532) [![](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/DHI/WaterBench-MIKESHE-Skjern)
+
+![](https://raw.githubusercontent.com/DHI/WaterBench-MIKESHE-Skjern/main/figures/station_location.png)
+
+> DHI, GEUS (2026). Integrated Hydrological Model of Skjern Å catchment: MIKE SHE model setup, inputs, outputs and observation data [Data set]. Zenodo. [https://doi.org/10.5281/zenodo.18376532](https://doi.org/10.5281/zenodo.18376532)
+
+---
+
+### MIKE21HD-SouthernNorthSea {#mike21hd-southernnorthsea}
+
+[![](https://zenodo.org/badge/DOI/10.5281/zenodo.14929387.svg)](https://doi.org/10.5281/zenodo.14929387) [![](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/DHI/WaterBench-MIKE21HD-SouthernNorthSea)
+
+![](https://raw.githubusercontent.com/DHI/WaterBench-MIKE21HD-SouthernNorthSea/main/figures/geometry.png)
+
+> DHI. (2025). Hydrodynamic model of the Southern North Sea: MIKE21 model setup, outputs and observation data (Version v1) [Data set]. Zenodo. [https://doi.org/10.5281/zenodo.14929387](https://doi.org/10.5281/zenodo.14929387)
+
+---
+
+### MIKE21SW-SouthernNorthSea {#mike21sw-southernnorthsea}
+
+[![](https://zenodo.org/badge/DOI/10.5281/zenodo.17413569.svg)](https://doi.org/10.5281/zenodo.17413569) [![](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/DHI/WaterBench-MIKE21SW-SouthernNorthSea)
+
+![](https://raw.githubusercontent.com/DHI/WaterBench-MIKE21SW-SouthernNorthSea/main/figures/geometry.png)
+
+> DHI. (2025). Spectral wave model of the Southern North Sea: MIKE21 SW model setup, outputs and observation data [Data set]. Zenodo. [https://doi.org/10.5281/zenodo.17413569](https://doi.org/10.5281/zenodo.17413569)
+
+---
+
+### MIKE21HD-ConceptionBay {#mike21hd-conceptionbay}
+
+[![](https://zenodo.org/badge/DOI/10.5281/zenodo.14504931.svg)](https://doi.org/10.5281/zenodo.14504931) [![](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/DHI/WaterBench-MIKE21HD-ConceptionBay)
+
+![](https://raw.githubusercontent.com/DHI/WaterBench-MIKE21HD-ConceptionBay/main/figures/geometry.png)
+
+> DHI. (2024). Hydrodynamic model of Conception Bay: MIKE21 model setup, outputs and observation data [Data set]. Zenodo. [https://doi.org/10.5281/zenodo.14504931](https://doi.org/10.5281/zenodo.14504931)
+
+---
+
+### MIKE21HD-Oresund {#mike21hd-oresund}
+
+[![](https://zenodo.org/badge/DOI/10.5281/zenodo.14160710.svg)](https://doi.org/10.5281/zenodo.14160710) [![](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/DHI/WaterBench-MIKE21HD-Oresund)
 
 ![](https://raw.githubusercontent.com/DHI/WaterBench-MIKE21HD-Oresund/main/figures/geometry.png)
 
 > DHI. (2024). Hydrodynamic model of Øresund: MIKE21 model setup, outputs and observation data (1.0) [Data set]. Zenodo. [https://doi.org/10.5281/zenodo.14160710](https://doi.org/10.5281/zenodo.14160710)
 
-### [MIKE21HD-ConceptionBay](https://github.com/DHI/WaterBench-MIKE21HD-ConceptionBay) 
+---
 
-[![](https://zenodo.org/badge/DOI/10.5281/zenodo.14504931.svg)](https://doi.org/10.5281/zenodo.14504931)
+### TimeSeries-WWTPInflow {#timeseries-wwtpinflow}
 
-![](https://raw.githubusercontent.com/DHI/WaterBench-MIKE21HD-ConceptionBay/main/figures/geometry.png)
+[![](https://zenodo.org/badge/DOI/10.5281/zenodo.15301164.svg)](https://doi.org/10.5281/zenodo.15301164) [![](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/DHI/WaterBench-TimeSeries-WWTPINflow)
 
-> DHI. (2024). Hydrodynamic model of Conception Bay: MIKE21 model setup, outputs and observation data (1.0) [Data set]. Zenodo. [https://doi.org/10.5281/zenodo.14504931](https://doi.org/10.5281/zenodo.14504931)
-
-
-:::
-
-:::
-
-
-
+> DHI. (2025). Inflow to a Waste Water Treatment Plant: observations and processed data [Data set]. Zenodo. [https://doi.org/10.5281/zenodo.15301164](https://doi.org/10.5281/zenodo.15301164)
