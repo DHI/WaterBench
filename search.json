@@ -4,20 +4,20 @@
     "href": "index.html",
     "title": "WaterBench - a list of water modelling reference datasets",
     "section": "",
-    "text": "The DHI WaterBench datasets are aimed at supporting educational, research, and exploratory activities, such as:\n\nExperimenting with water modeling using MIKE Powered by DHI.\nValidating hydrodynamic model outputs with observational data.\nDeveloping methods for automatically calibrating model parameters.\nBuilding data-driven models, including machine learning surrogates of the MIKE simulation results.\n\n\n\n\n\n\n\n\n\nDHI. (2024). Hydrodynamic model of Øresund: MIKE21 model setup, outputs and observation data (1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.14160710\n\n\n\n\n\n\n\nDHI. (2024). Hydrodynamic model of Conception Bay: MIKE21 model setup, outputs and observation data (1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.14504931"
+    "text": "The DHI WaterBench datasets are aimed at supporting educational, research, and exploratory activities, such as:\n\nExperimenting with water modeling using MIKE Powered by DHI.\nValidating hydrodynamic model outputs with observational data.\nDeveloping methods for automatically calibrating model parameters.\nBuilding data-driven models, including machine learning surrogates of the MIKE simulation results.\n\nEach dataset is built around a realistic case and includes model setup files, input data, selected outputs, observations, and example notebooks for validation and analysis. Published on Zenodo and GitHub in a standardized structure, the datasets support reuse, reproducibility, education, and research."
   },
   {
     "objectID": "index.html#waterbench",
     "href": "index.html#waterbench",
     "title": "WaterBench - a list of water modelling reference datasets",
     "section": "",
-    "text": "The DHI WaterBench datasets are aimed at supporting educational, research, and exploratory activities, such as:\n\nExperimenting with water modeling using MIKE Powered by DHI.\nValidating hydrodynamic model outputs with observational data.\nDeveloping methods for automatically calibrating model parameters.\nBuilding data-driven models, including machine learning surrogates of the MIKE simulation results."
+    "text": "The DHI WaterBench datasets are aimed at supporting educational, research, and exploratory activities, such as:\n\nExperimenting with water modeling using MIKE Powered by DHI.\nValidating hydrodynamic model outputs with observational data.\nDeveloping methods for automatically calibrating model parameters.\nBuilding data-driven models, including machine learning surrogates of the MIKE simulation results.\n\nEach dataset is built around a realistic case and includes model setup files, input data, selected outputs, observations, and example notebooks for validation and analysis. Published on Zenodo and GitHub in a standardized structure, the datasets support reuse, reproducibility, education, and research."
   },
   {
-    "objectID": "index.html#published-datasets",
-    "href": "index.html#published-datasets",
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
     "title": "WaterBench - a list of water modelling reference datasets",
-    "section": "",
-    "text": "DHI. (2024). Hydrodynamic model of Øresund: MIKE21 model setup, outputs and observation data (1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.14160710\n\n\n\n\n\n\n\nDHI. (2024). Hydrodynamic model of Conception Bay: MIKE21 model setup, outputs and observation data (1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.14504931"
+    "section": "Overview",
+    "text": "Overview\n\n\n\n\nCase\nType\nLinks\n\n\n\n\nMIKESHE-Skjern\nIntegrated hydrology\n \n\n\nMIKE21HD-SouthernNorthSea\nHydrodynamics\n \n\n\nMIKE21SW-SouthernNorthSea\nSpectral waves\n \n\n\nMIKE21HD-ConceptionBay\nHydrodynamics\n \n\n\nMIKE21HD-Oresund\nHydrodynamics\n \n\n\nTimeSeries-WWTPInflow\nTime series\n \n\n\n\n\n\n\nMIKESHE-Skjern\n \n\n\nDHI, GEUS (2026). Integrated Hydrological Model of Skjern Å catchment: MIKE SHE model setup, inputs, outputs and observation data [Data set]. Zenodo. https://doi.org/10.5281/zenodo.18376532\n\n\n\n\nMIKE21HD-SouthernNorthSea\n \n\n\nDHI. (2025). Hydrodynamic model of the Southern North Sea: MIKE21 model setup, outputs and observation data (Version v1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.14929387\n\n\n\n\nMIKE21SW-SouthernNorthSea\n \n\n\nDHI. (2025). Spectral wave model of the Southern North Sea: MIKE21 SW model setup, outputs and observation data [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17413569\n\n\n\n\nMIKE21HD-ConceptionBay\n \n\n\nDHI. (2024). Hydrodynamic model of Conception Bay: MIKE21 model setup, outputs and observation data [Data set]. Zenodo. https://doi.org/10.5281/zenodo.14504931\n\n\n\n\nMIKE21HD-Oresund\n \n\n\nDHI. (2024). Hydrodynamic model of Øresund: MIKE21 model setup, outputs and observation data (1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.14160710\n\n\n\n\nTimeSeries-WWTPInflow\n \n\nDHI. (2025). Inflow to a Waste Water Treatment Plant: observations and processed data [Data set]. Zenodo. https://doi.org/10.5281/zenodo.15301164"
   }
 ]
