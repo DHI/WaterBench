@@ -158,5 +158,5 @@ The WaterBench cases are already applied in research dissemination (publications
 | Year | University collaboration | Title | Type |
 |----------|----------|-------------| -------------|
 | 2026 | Technical University of Denmark | Enhancing flexible mesh machine learning surrogate for water models using observations |  MSc. thesis |
-| 2025 | Technical University of Denmark | Multiscale POD (mPOD): Decomposing Tidal Water Levels at Conception Bay | Exam project in course |
+| 2025 | Technical University of Denmark | Multiscale POD (mPOD): Decomposing Tidal Water Levels at Conception Bay | Exam project in course. [View poster](publications/mPOD_poster_student_project.pdf){target="_blank"} |
 | 2025 | Chalmers University of Technology | A Surrogate Model for Accelerating Physics-Based Models | MSc. thesis |
