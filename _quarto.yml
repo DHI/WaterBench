@@ -1,7 +1,5 @@
 project:
   type: website
-  resources:
-    - publications/
 preview:
   port: 3000
 
