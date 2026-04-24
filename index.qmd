@@ -149,8 +149,8 @@ The WaterBench cases are already applied in research dissemination (publications
 | EGU 2026 | Melissa U. Jessen, Jesper S. Mariegaard, Freja H. Petersen, _Measurement-Constrained Reduced-Order Surrogates for Flexible-Mesh Coastal Ocean Models_ [Poster] |
 | EGU 2026 | Faro Schäfer, Freja H. Petersen, Jesper S. Mariegaard, _Graph Neural Networks versus Reduced-Order Models for Surrogate-Based Coastal Forecasting on Unstructured Meshes_ [Poster] |
 | Eccomas 2026 | Faro Schäfer, Clemens Cremer and Jesper Mariegaard, _Efficient Graph Design for GNN Surrogates of Flexible Unstructured Coastal Models in Complex Geometries_ [Poster] |
-| EurIPS 2025 | Freja H. Petersen, Allan P. Engsig-Karup, Rocco Palmitessa, Jesper S. Mariegaard, _Temporal stability in reduced order model prediction of sea states: A surrogate model case study_ [Poster]. [Abstract available here](https://openreview.net/forum?id=onjNdNKW2K).
-| AIS 2025 | Freja H. Petersen, Allan P. Engsig-Karup, Rocco Palmitessa, Jesper S. Mariegaard, _Accelerating Water Simulations with Reliable SurrogateModeling: Motivation and Early Directions_ [Poster]. [Abstract available here (poster 4)](https://ais25.eu/exhibition). |
+| EurIPS 2025 | Freja H. Petersen, Allan P. Engsig-Karup, Rocco Palmitessa, Jesper S. Mariegaard, _Temporal stability in reduced order model prediction of sea states: A surrogate model case study_ [[Poster]](publications/Poster_EurIPS_frtp.pdf){target="_blank"}. [Abstract available here](https://openreview.net/forum?id=onjNdNKW2K).
+| AIS 2025 | Freja H. Petersen, Allan P. Engsig-Karup, Rocco Palmitessa, Jesper S. Mariegaard, _Accelerating Water Simulations with Reliable SurrogateModeling: Motivation and Early Directions_ [[Poster]](publications/Poster_AIS_frtp.pdf){target="_blank"}. [Abstract available here (poster 4)](https://ais25.eu/exhibition). |
 
 
 ### Student Projects
