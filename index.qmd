@@ -76,6 +76,14 @@ MIKE 21 HD model of Conception Bay, Newfoundland, Canada with 8,474 elements cov
 
 > DHI. (2024). Hydrodynamic model of Conception Bay: MIKE21 model setup, outputs and observation data [Data set]. Zenodo. [https://doi.org/10.5281/zenodo.14504931](https://doi.org/10.5281/zenodo.14504931)
 
+### [MIKE21SW-SouthernNorthSea](https://github.com/DHI/WaterBench-MIKE21SW-SouthernNorthSea) 
+
+[![](https://zenodo.org/badge/DOI/10.5281/zenodo.17099653.svg)](https://doi.org/10.5281/zenodo.17099653)
+
+![](https://raw.githubusercontent.com/DHI/WaterBench-MIKE21SW-SouthernNorthSea/main/figures/geometry.png)
+
+> DHI. (2025). Spectral wave model of the Southern North Sea: MIKE21 SW model setup, outputs and observation data (1.0) [Data set]. Zenodo. [https://doi.org/10.5281/zenodo.17099653](https://doi.org/10.5281/zenodo.17099653)
+
 ---
 
 ### MIKE21HD-Oresund {#mike21hd-oresund}
