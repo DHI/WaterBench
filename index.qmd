@@ -108,6 +108,39 @@ Approximately 15 months of hourly measurements of combined sewage inflow to an a
 
 ---
 
+## Applications of WaterBench
+
+The WaterBench cases are already applied in research dissemination through publications and conference presentations, university teaching, and MSc thesis projects. The list below provides an overview of some of these applications. 
+
+#### Publications
+
+| Year | Reference |
+|----------|-------------|
+| 2026 | Petersen, F.H., Mariegaard, J.S., Palmitessa, R., Engsig-Karup, A.P. (2026) Reduced-Order Surrogates for Forced Flexible Mesh Coastal-Ocean Models. [arXiv:2602.05416](https://arxiv.org/abs/2602.05416) [Preprint. Submitted for peer-review in journal.] |
+
+
+#### Conference contributions
+
+| Conference | Reference |
+|----------|-------------|
+| Eccomas 2026 | Schäfer, F., Cremer, C., and Mariegaard, J. S.: , Efficient Graph Design for GNN Surrogates of Flexible Unstructured Coastal Models in Complex Geometries, WCCM-ECCOMAS 2026, Munich, Germany, 19-24 July 2026. [Poster] |
+| EGU 2026 | Jessen, M. U., Mariegaard, J. S., and Petersen, F. H.: Measurement-Constrained Reduced-Order Surrogates for Flexible-Mesh Coastal Ocean Models, EGU General Assembly 2026, Vienna, Austria, 3–8 May 2026, EGU26-11847, [https://doi.org/10.5194/egusphere-egu26-11847](https://doi.org/10.5194/egusphere-egu26-11847), 2026. [Poster] |
+| EGU 2026 | Schäfer, F., Petersen, F. H., and Mariegaard, J. S.: Graph Neural Networks versus Reduced-Order Models for Surrogate-Based Coastal Forecasting on Unstructured Meshes, EGU General Assembly 2026, Vienna, Austria, 3–8 May 2026, EGU26-12542, [https://doi.org/10.5194/egusphere-egu26-12542](https://doi.org/10.5194/egusphere-egu26-12542), 2026. [Poster] |
+| AIS 2025 | Petersen, F. H., Engsig-Karup, A.P., Palmitessa, R., Mariegaard, J.S.: Accelerating Water Simulations with Reliable SurrogateModeling: Motivation and Early Directions, EurIPS 2025, Copenhagen, Denmark, 2-7 December 2025. [[Poster]](publications/Poster_AIS_frtp.pdf){target="_blank"}. [[Abstract (entry 4)]](https://ais25.eu/exhibition). |
+| EurIPS 2025 | Petersen, F.H., Engsig-Karup, A.P., Palmitessa, R., and Mariegaard, J.S.: Temporal stability in reduced order model prediction of sea states: A surrogate model case study, AI in Science Summit 2025, Copenhagen, Denmark, 3-4 November 2025. [[Poster]](publications/Poster_EurIPS_frtp.pdf){target="_blank"}. [[Abstract]](https://openreview.net/forum?id=onjNdNKW2K).
+
+
+
+#### Student Projects
+
+| Year | University collaboration | Title | Type |
+|----------|----------|-------------| -------------|
+| 2026 | Technical University of Denmark | Enhancing flexible mesh machine learning surrogate for water models using observations |  MSc. thesis |
+| 2025 | Technical University of Denmark | Multiscale POD (mPOD): Decomposing Tidal Water Levels at Conception Bay | Exam project in course. [[Poster]](publications/mPOD_poster_student_project.pdf){target="_blank"} |
+| 2025 | Chalmers University of Technology | A Surrogate Model for Accelerating Physics-Based Models | MSc. thesis |
+
+---
+
 ## Related datasets and benchmarks
 
 Other open datasets and benchmark collections that may be of interest:
@@ -137,3 +170,7 @@ Large-scale open data providers relevant to water, ocean, atmosphere, and geosci
 | [World Ocean Database (NOAA)](https://www.ncei.noaa.gov/products/world-ocean-database) | World's largest collection of uniformly formatted, quality-controlled ocean profile data from the 1770s to present. |
 | [OpenET](https://etdata.org) | Open-source evapotranspiration data for water management across the western United States. |
 | [UC Davis Hydrology Datasets](https://guides.library.ucdavis.edu/hydrology/datasets) | Curated guide to hydrological datasets and data repositories for research. |
+
+
+
+
