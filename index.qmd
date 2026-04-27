@@ -104,14 +104,14 @@ Approximately 15 months of hourly measurements of combined sewage inflow to an a
 
 The WaterBench cases are already applied in research dissemination through publications and conference presentations, university teaching, and MSc thesis projects. The list below provides an overview of some of these applications. 
 
-### Publications
+#### Publications
 
 | Year | Reference |
 |----------|-------------|
 | 2026 | Petersen, F.H., Mariegaard, J.S., Palmitessa, R., Engsig-Karup, A.P. (2026) Reduced-Order Surrogates for Forced Flexible Mesh Coastal-Ocean Models. [arXiv:2602.05416](https://arxiv.org/abs/2602.05416) [Preprint. Submitted for peer-review in journal.] |
 
 
-### Conference contributions
+#### Conference contributions
 
 | Conference | Reference |
 |----------|-------------|
@@ -123,7 +123,7 @@ The WaterBench cases are already applied in research dissemination through publi
 
 
 
-### Student Projects
+#### Student Projects
 
 | Year | University collaboration | Title | Type |
 |----------|----------|-------------| -------------|
