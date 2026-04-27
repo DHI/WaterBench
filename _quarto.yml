@@ -5,7 +5,9 @@ preview:
 
 website:
   title: "WaterBench - a list of water modelling reference datasets"
-  
+
+  navbar: true
+
   page-footer:
     left: "Copyright 2024-2026, DHI"
     right:
