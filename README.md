@@ -37,4 +37,4 @@ Brief description of the model, domain, time period, and validation data.
 - Replace `WaterbenchType-WaterbenchLocation` with your actual case name (e.g. `MIKESHE-Skjern`).
 - Replace `XXXXXXX` with your Zenodo DOI number.
 - The anchor `{#waterbenchtype-waterbenchlocation}` must match the link in the table row exactly (lowercase, hyphens only).
-- The figure is loaded directly from GitHub — make sure `figures/geometry.png` or a similar figure exists in your repo.
+- The figure is loaded directly from GitHub — make sure `figures/geometry.png` or a similar figure exists in your repo. 
