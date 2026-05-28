@@ -48,7 +48,7 @@ NAME=$(basename "$REPO")
 FAMILY=$(echo "$NAME" | sed -nE 's/^WaterBench-([^-]+)-.*/\1/p')
 ```
 
-Map `$FAMILY` to one of: `MIKE21HD`, `MIKE3HD`, `MIKE21SW`, `MIKESHE`, `MIKEplus`, `TimeSeries`, `WD`, or `Other`. Model families (anything starting with `MIKE`) are **model-based**; `TimeSeries` and `WD` are **data-only`.
+Map `$FAMILY` to one of: `MIKE21HD`, `MIKE3HD`, `MIKE21SW`, `MIKESHE`, `MIKEplus`, `TimeSeries`, `WD`, or `Other`. Model families (anything starting with `MIKE`) are **model-based**; `TimeSeries` and `WD` are **data-only**.
 
 If the repository directory is not named `WaterBench-*`, fall back to content-based detection: presence of `model/` and `*.m21fm` / `*.sw` / `*.she` / `*.mupp` files indicates model-based.
 
