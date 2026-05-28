@@ -1,6 +1,6 @@
 ---
 name: review-waterbench-case
-description: Review a WaterBench case repository against the canonical structure spec at STRUCTURE.md. Produces a markdown findings report covering directory layout, controlled vocabulary, README conventions, and (for model-based cases) model-setup runnability — i.e. whether the model file references inputs at paths that actually exist in the repo. Read-only — does not modify, push, or open issues.
+description: Review a WaterBench case repository against the canonical structure spec at STRUCTURE.md. Produces a markdown findings report covering directory layout, controlled vocabulary, README conventions, the observation contract (for model-based cases) — `.dfs0` observation data, a variable-agnostic `stations.csv` manifest with explicit CRS, and manifest↔data referential integrity — and model-setup runnability, i.e. whether the model file references inputs at paths that actually exist in the repo. Read-only — does not modify, push, or open issues.
 license: MIT
 allowed-tools: shell
 ---
@@ -74,9 +74,50 @@ Required directories: `model/`, `input/`, `output_sample/`, `observations/`, `fi
 
 **Exception:** MIKESHE cases **MAY** omit `model/` if the model is split across `input/` subdirectories. Detect this by checking for absence of `model/` AND presence of `*.she` files anywhere under `input/`.
 
+**Observation contract (§8)** — model-based cases. Run these checks against `observations/`:
+
+```bash
+OBS="$REPO/observations"
+
+# §8.1 — observation time series MUST be .dfs0; the only permitted .csv is the manifest.
+for f in "$OBS"/*.csv; do
+  [ -e "$f" ] || continue
+  base=$(basename "$f")
+  [ "$base" = "stations.csv" ] && continue            # the manifest — allowed
+  case "$base" in
+    *stations*.csv) finding MUST "Variable-encoded station manifest: observations/$base (use one variable-agnostic stations.csv; variable lives in the .dfs0 items — §8.3)" ;;
+    *)              finding MUST "Observation data in non-.dfs0 format: observations/$base (observation time series MUST be .dfs0; only stations.csv may be .csv — §8.1)" ;;
+  esac
+done
+
+# §8.3 — the manifest must exist and declare an explicit CRS and a station id (no implicit WGS84).
+if [ -f "$OBS/stations.csv" ]; then
+  hdr=$(head -1 "$OBS/stations.csv" | tr 'A-Z' 'a-z' | tr -d ' ')
+  echo "$hdr" | grep -qE '(^|,)crs(,|$)'                || finding MUST "stations.csv declares no 'crs' column (CRS MUST be explicit — no implicit WGS84 — §8.3)"
+  echo "$hdr" | grep -qE '(^|,)(station_id|station)(,|$)' || finding MUST "stations.csv has no station-id column (§8.3)"
+  echo "$hdr" | grep -qE '(^|,)vertical_datum(,|$)'     || finding SHOULD "stations.csv has no 'vertical_datum' column (required for water-level stations — §8.3)"
+elif [ -d "$OBS" ]; then
+  finding MUST "observations/ has no stations.csv manifest (§8.3)"
+fi
+
+# §8.5 — referential integrity, both directions: stations.csv rows <-> .dfs0 files.
+if [ -f "$OBS/stations.csv" ]; then
+  ids=$(awk -F, 'NR==1{for(i=1;i<=NF;i++){h=tolower($i);gsub(/ /,"",h);if(h=="station_id"||h=="station")c=i}} NR>1&&c{gsub(/[[:space:]]/,"",$c);if($c!="")print $c}' "$OBS/stations.csv")
+  for id in $ids; do
+    [ -e "$OBS/$id.dfs0" ] || finding MUST "Orphan station: '$id' in stations.csv has no observations/$id.dfs0 (§8.5)"
+  done
+  for f in "$OBS"/*.dfs0; do
+    [ -e "$f" ] || continue
+    stem=$(basename "$f" .dfs0)
+    case "$stem" in Altimetry_*) continue ;; esac      # altimetry tracks are not stations
+    printf '%s\n' "$ids" | grep -qx "$stem" || finding MUST "Orphan data file: observations/$stem.dfs0 has no row in stations.csv (§8.5)"
+  done
+fi
+```
+
 #### Data-only families
 
-At least one of `observations/` or `data/` MUST exist. `processed/`, `figures/`, `.publish/` SHOULD exist.
+At least one of `observations/` or `data/` MUST exist. `processed/`, `figures/`, `.publish/` SHOULD exist. An observation-centric data-only case **SHOULD** also follow the §8.1/§8.3 observation contract (`.dfs0` data + a variable-agnostic `stations.csv`).
 
 ### Step 4 — Controlled vocabulary checks (§4)
 
@@ -176,4 +217,4 @@ Do not invent findings beyond what the checks above produce. If a check is skipp
 - It does not modify files, rename directories, or commit anything.
 - It does not open GitHub issues or PRs.
 - It does not run the MIKE model — runnability is checked statically by path resolution, not by simulation.
-- It does not validate the *content* of the data (units, time coverage, station coordinates). It only checks structure, naming, README, and path references.
+- It does not validate the *correctness of values*. It checks that observation data is `.dfs0`, that `stations.csv` declares the required columns (`crs`, station id), and that the manifest and `.dfs0` files reference each other (§8) — but it does **not** verify that a declared unit, coordinate, CRS, or datum is actually *right*, that EUM item types are sensible, or that time coverage is adequate. Those need a domain reviewer.
