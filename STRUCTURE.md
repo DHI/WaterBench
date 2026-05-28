@@ -48,12 +48,12 @@ A case **SHOULD** also contain at the repository root:
 
 | Path             | Kind | Notes                                                                                |
 | ---------------- | ---- | ------------------------------------------------------------------------------------ |
-| `pyproject.toml` | File | Python project metadata. Preferred over a free-standing `requirements.txt`.          |
+| `requirements.txt` | File | Pinned Python dependencies for the notebooks/scripts in `code/`. Preferred over `pyproject.toml`: cases are script-style data deposits, not installable packages. |
 
 A case **MUST NOT** contain at the repository root:
 
 - Top-level data files (e.g. `*.csv`, `*.parquet`, `*.dfs*`) — these belong inside a domain directory.
-- Top-level zip/archive artifacts (e.g. `zenodo_upload.zip`) — these belong in `.publish/`.
+- **Committed** zip/archive artifacts *anywhere* (e.g. `zenodo_upload.zip`, `output.zip`). These are build outputs for the Zenodo deposit, produced locally by the scripts in `.publish/` and **gitignored** (`*.zip`); they MUST NOT be committed to the repository.
 
 ---
 
@@ -267,7 +267,7 @@ No orphan rows (a station with no data) and no orphan files (data with no metada
 - **Mixed-case license filename**: see §4.2.
 - **Top-level data sprawl**: data files at the repo root that should live under a domain directory.
 - **`output/` at the top of a published case** that duplicates `output_sample/`: keep full outputs on Zenodo, only sample data in the repo. The template carries an empty `output/` for clarity, but published cases **MUST NOT** ship large output files in the repository.
-- **Hidden zenodo zip in the repo root**: archives belong in `.publish/`, never in the root.
+- **Committed zip/archive**: a `*.zip` committed *anywhere* in the repo. Archives are gitignored build outputs for the Zenodo deposit; `.publish/` holds the *scripts* that generate them (`zip_repo.py`, `zip_output.py`), never the archives themselves.
 - **`.csv` observation data**: observation time series in `.csv` (or any non-`.dfs0` format). Only `stations.csv` may be `.csv` — see §8.1.
 - **Variable-encoded station manifest**: `current_stations.csv`, `stations_<variable>.csv`, or an implicit "default variable" convention — see §8.3.
 - **Orphan station or orphan data file**: a `stations.csv` row with no `.dfs0`, or a `.dfs0` with no manifest row — see §8.5.

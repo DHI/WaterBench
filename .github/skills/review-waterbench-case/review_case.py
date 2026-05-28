@@ -147,6 +147,14 @@ def check_universal_core(repo: Path, rep: Report) -> None:
     if not (repo / "code").is_dir():
         rep.must("Missing required directory: code/ (§2)")
 
+    if (
+        not (repo / "requirements.txt").exists()
+        and not (repo / "pyproject.toml").exists()
+    ):
+        rep.should(
+            "No requirements.txt (preferred) or pyproject.toml at the repo root (§2)"
+        )
+
     for f in repo.iterdir():
         if not f.is_file():
             continue
@@ -374,9 +382,13 @@ def check_publishing(repo: Path, rep: Report) -> None:
 
 
 def check_anti_patterns(repo: Path, rep: Report) -> None:
-    """§9 — archives at the root, large top-level output/."""
-    for f in repo.glob("*.zip"):
-        rep.must(f"Archive at repo root: {f.name} — belongs in .publish/ (§9)")
+    """§9 — committed archives anywhere, large top-level output/."""
+    for f in repo.rglob("*.zip"):
+        rel = f.relative_to(repo).as_posix()
+        rep.must(
+            f"Committed archive: {rel} — *.zip is a gitignored build output; "
+            ".publish/ holds the zipping scripts, not the archives (§9)"
+        )
     out = repo / "output"
     if out.is_dir() and any(p.is_file() for p in out.rglob("*")):
         rep.note(
