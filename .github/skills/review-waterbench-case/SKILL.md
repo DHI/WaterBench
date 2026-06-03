@@ -13,11 +13,13 @@ The checks are implemented in Python ([`review_case.py`](review_case.py)) so the
 
 ## Inputs
 
-A single argument: the path to a cloned WaterBench case repository. If no path is given, the checker defaults to the current working directory.
+A single argument: the path to a **complete local WaterBench case folder** — one where *all* files are present, including the large result/output files. If no path is given, the checker defaults to the current working directory.
 
 ```
 /review-waterbench-case /path/to/WaterBench-MIKE21HD-SomeCase
 ```
+
+> **Run it on a complete folder, not a bare `git clone`.** A clone deliberately omits the large result files — full model outputs live on the Zenodo deposit and only `output_sample/` is committed (§9). The §7 runnability check resolves the paths referenced by the model setup file against the files actually on disk; run against a sparse clone it would report Zenodo-only files as *missing* and emit false **MUST** findings. Point the skill at the author's assembled working directory, or at a clone with the Zenodo deposit extracted over it, so every referenced file is present. (This does **not** excuse omitting small, in-repo artifacts such as the model setup file itself, which MUST be committed — see §7.)
 
 ## Output
 

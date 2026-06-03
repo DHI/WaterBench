@@ -178,7 +178,7 @@ The repository **SHOULD** carry a GitHub Actions workflow that renders `README.m
 
 ## 7. Model setup runnability (MUST, model-based cases)
 
-A WaterBench case is meant to be **runnable without modifications** after cloning. The model setup file (`.m21fm`, `.sw`, `.she`, `.mupp`, etc.) **MUST** reference all input data using **relative paths** that resolve from the model file's directory.
+A WaterBench case is meant to be **runnable without modifications** after cloning. The model setup file (`.m21fm`, `.sw`, `.she`, `.mupp`, etc.) **MUST** be committed to the repository — it is the entry point the case is run from, so a case whose setup file is missing, gitignored, or stored only externally is non-compliant. The setup file **MUST** reference all input data using **relative paths** that resolve from the model file's directory.
 
 ### 7.1 Path requirements
 
@@ -191,7 +191,7 @@ In the model setup file(s):
 
 ### 7.2 What the skill checks
 
-The skill extracts path-like tokens (any token containing a file extension known to MIKE: `.mesh`, `.dfs0`, `.dfs1`, `.dfs2`, `.dfsu`, `.bnd`, `.dat`, etc.) from the model setup file. For each token:
+The skill extracts path-like tokens (any token containing a file extension known to MIKE: `.mesh`, `.dfs0`, `.dfs1`, `.dfs2`, `.dfs3`, `.dfsu`, `.shp`, `.xns11`, etc.) from the model setup file. For each token:
 
 - If the token is an absolute path → **MUST** finding.
 - If the token does not resolve to a file in the repository → **MUST** finding.
