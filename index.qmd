@@ -116,7 +116,7 @@ The WaterBench cases are already applied in research dissemination through publi
 
 | Year | Reference |
 |----------|-------------|
-| 2026 | Petersen, F.H., Mariegaard, J.S., Palmitessa, R., Engsig-Karup, A.P. (2026) Reduced-Order Surrogates for Forced Flexible Mesh Coastal-Ocean Models. [arXiv:2602.05416](https://arxiv.org/abs/2602.05416) [Preprint. Submitted for peer-review in journal.] |
+| 2026 | Petersen, F.H., Mariegaard, J.S., Palmitessa, R., Engsig-Karup, A.P, Reduced-Order Surrogates for Forced Flexible Mesh Coastal-Ocean Models, Ocean Modelling, 2026, Volume 203, 102772 [https://doi.org/10.1016/j.ocemod.2026.102772](https://doi.org/10.1016/j.ocemod.2026.102772). |
 
 
 #### Conference contributions
