@@ -48,7 +48,7 @@ A case **SHOULD** also contain at the repository root:
 
 | Path             | Kind | Notes                                                                                |
 | ---------------- | ---- | ------------------------------------------------------------------------------------ |
-| `requirements.txt` | File | Pinned Python dependencies for the notebooks/scripts in `code/`. Preferred over `pyproject.toml`: cases are script-style data deposits, not installable packages. |
+| `requirements.txt` | File | Pinned Python dependencies for the notebooks/scripts in `code/`. Preferred over `pyproject.toml`: lowest-friction to reproduce the environment on any toolchain (pip/venv/uv/conda); cases are run, not installed. `pyproject.toml` is allowed but not preferred. |
 
 A case **MUST NOT** contain at the repository root:
 
