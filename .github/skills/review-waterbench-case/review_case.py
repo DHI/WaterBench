@@ -262,16 +262,16 @@ def check_observations(repo: Path, rep: Report) -> None:
         p.stem for p in obs.glob("*.dfs0") if not p.name.startswith("Altimetry_")
     }
     for sid in station_ids:
-        if not (obs / f"{sid}.dfs0").exists():
+        if not any(obs.glob(f"{sid}*.dfs0")):
             rep.must(
-                f"Orphan station: '{sid}' in stations.csv has no observations/{sid}.dfs0 (§8.5)"
+                f"Orphan station: '{sid}' in stations.csv has no observations/{sid}*.dfs0 (§8.5)"
             )
     if manifest.exists():
-        id_set = set(station_ids)
         for stem in sorted(dfs0_stems):
-            if stem not in id_set:
+            if not any(stem == sid or stem.startswith(f"{sid}_") for sid in station_ids):
                 rep.must(
-                    f"Orphan data file: observations/{stem}.dfs0 has no row in stations.csv (§8.5)"
+                    f"Orphan data file: observations/{stem}.dfs0 has no matching "
+                    f"station_id (or '<station_id>_<suffix>') in stations.csv (§8.5)"
                 )
 
     # §8.1 / §8.4 — content: each .dfs0 carries EUM item type + unit. Needs mikeio.
