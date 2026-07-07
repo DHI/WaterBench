@@ -24,6 +24,7 @@ Each dataset is built around a realistic case and includes model setup files, in
 | [MIKE21SW-SouthernNorthSea](#mike21sw-southernnorthsea) | Spectral waves | [![](https://zenodo.org/badge/DOI/10.5281/zenodo.17413569.svg){height=20}](https://doi.org/10.5281/zenodo.17413569) [![](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white){height=20}](https://github.com/DHI/WaterBench-MIKE21SW-SouthernNorthSea) |
 | [MIKE21HD-ConceptionBay](#mike21hd-conceptionbay) | Hydrodynamics | [![](https://zenodo.org/badge/DOI/10.5281/zenodo.14504931.svg){height=20}](https://doi.org/10.5281/zenodo.14504931) [![](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white){height=20}](https://github.com/DHI/WaterBench-MIKE21HD-ConceptionBay) |
 | [MIKE21HD-Oresund](#mike21hd-oresund) | Hydrodynamics | [![](https://zenodo.org/badge/DOI/10.5281/zenodo.14160710.svg){height=20}](https://doi.org/10.5281/zenodo.14160710) [![](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white){height=20}](https://github.com/DHI/WaterBench-MIKE21HD-Oresund) |
+| [MIKE21HD-HamburgElbeEstuary](#mike21hd-hamburgelbeestuary) | Hydrodynamics | [![](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white){height=20}](https://github.com/DHI/WaterBench-MIKE21HD-HamburgElbeEstuary) |
 | [TimeSeries-WWTPInflow](#timeseries-wwtpinflow) | Time series | [![](https://zenodo.org/badge/DOI/10.5281/zenodo.15301164.svg){height=20}](https://doi.org/10.5281/zenodo.15301164) [![](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white){height=20}](https://github.com/DHI/WaterBench-TimeSeries-WWTPINflow) |
 
 :::
@@ -98,6 +99,18 @@ MIKE 21 HD model of the Øresund strait between Denmark and Sweden with 3,320 el
 
 ---
 
+### MIKE21HD-HamburgElbeEstuary {#mike21hd-hamburgelbeestuary}
+
+[![](https://zenodo.org/badge/DOI/10.5281/zenodo.19740921.svg)](https://doi.org/10.5281/zenodo.19740921) [![](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/DHI/WaterBench-MIKE21HD-HamburgElbeEstuary)
+
+MIKE 21 HD model of the Hamburg–Elbe estuary, Germany, with ~8,000 elements covering ~70 km of river from Stadersand to the upstream weir at Geesthacht for 2020–2026. Features complex meandering morphology with tidal ranges of 5–6 m and intertidal drying. Driven by tidal water level fluctuations at Stadersand and river discharge at Geesthacht, based on bathymetry from the WSV DGM-W 2022 dataset. Validated against water level observations at gauging stations throughout the port of Hamburg.
+
+![](https://raw.githubusercontent.com/DHI/WaterBench-MIKE21HD-HamburgElbeEstuary/main/figures/geometry.png)
+
+> DHI. (2026). Hydrodynamic model of the Hamburg–Elbe estuary: MIKE21 model setup, outputs and observation data [Data set]. GitHub. [https://github.com/DHI/WaterBench-MIKE21HD-HamburgElbeEstuary](https://github.com/DHI/WaterBench-MIKE21HD-HamburgElbeEstuary)
+
+---
+
 ### TimeSeries-WWTPInflow {#timeseries-wwtpinflow}
 
 [![](https://zenodo.org/badge/DOI/10.5281/zenodo.15301164.svg)](https://doi.org/10.5281/zenodo.15301164) [![](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/DHI/WaterBench-TimeSeries-WWTPINflow)
@@ -123,7 +136,6 @@ The WaterBench cases are already applied in research dissemination through publi
 
 | Conference | Reference |
 |----------|-------------|
-| Eccomas 2026 | Schäfer, F., Cremer, C., and Mariegaard, J. S.: , Efficient Graph Design for GNN Surrogates of Flexible Unstructured Coastal Models in Complex Geometries, WCCM-ECCOMAS 2026, Munich, Germany, 19-24 July 2026. [Presentation]. [[Abstract]](https://congressarchive.cimne.com/wccm_eccomas_2026/abstracts/09e88699ee0911f0b205000c29ddfc0c.pdf) |
 | EGU 2026 | Jessen, M. U., Mariegaard, J. S., and Petersen, F. H.: Measurement-Constrained Reduced-Order Surrogates for Flexible-Mesh Coastal Ocean Models, EGU General Assembly 2026, Vienna, Austria, 3–8 May 2026, EGU26-11847, [https://doi.org/10.5194/egusphere-egu26-11847](https://doi.org/10.5194/egusphere-egu26-11847), 2026. [Poster] |
 | EGU 2026 | Schäfer, F., Petersen, F. H., and Mariegaard, J. S.: Graph Neural Networks versus Reduced-Order Models for Surrogate-Based Coastal Forecasting on Unstructured Meshes, EGU General Assembly 2026, Vienna, Austria, 3–8 May 2026, EGU26-12542, [https://doi.org/10.5194/egusphere-egu26-12542](https://doi.org/10.5194/egusphere-egu26-12542), 2026. [Poster] |
 | EurIPS 2025 | Petersen, F.H., Engsig-Karup, A.P., Palmitessa, R., and Mariegaard, J.S.: Temporal stability in reduced order model prediction of sea states: A surrogate model case study. EurIPS 2025, Copenhagen, Denmark, 2-7 December 2025.  [[Poster]](publications/Poster_EurIPS_frtp.pdf){target="_blank"}. [[Abstract]](https://openreview.net/forum?id=onjNdNKW2K). 
@@ -171,7 +183,3 @@ Large-scale open data providers relevant to water, ocean, atmosphere, and geosci
 | [World Ocean Database (NOAA)](https://www.ncei.noaa.gov/products/world-ocean-database) | World's largest collection of uniformly formatted, quality-controlled ocean profile data from the 1770s to present. |
 | [OpenET](https://etdata.org) | Open-source evapotranspiration data for water management across the western United States. |
 | [UC Davis Hydrology Datasets](https://guides.library.ucdavis.edu/hydrology/datasets) | Curated guide to hydrological datasets and data repositories for research. |
-
-
-
-
