@@ -148,8 +148,8 @@ def check_universal_core(repo: Path, rep: Report) -> None:
         rep.must("Missing required directory: code/ (§2)")
 
     if (
-        not (repo / "requirements.txt").exists()
-        and not (repo / "pyproject.toml").exists()
+        not ((repo / "requirements.txt").exists() or (repo / "code/requirements.txt").exists())
+        and not ((repo / "pyproject.toml").exists() or (repo / "code/pyproject.toml").exists())
     ):
         rep.should(
             "No requirements.txt (preferred) or pyproject.toml at the repo root (§2)"
