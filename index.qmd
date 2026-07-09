@@ -99,6 +99,18 @@ MIKE 21 HD model of the Øresund strait between Denmark and Sweden with 3,320 el
 
 ---
 
+### MIKE3HD-Oresund {#mike3hd-oresund}
+
+[![](https://zenodo.org/badge/DOI/10.5281/zenodo.20284683.svg)](https://doi.org/10.5281/zenodo.20284683) [![](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/DHI/WaterBench-MIKE3HD-Oresund)
+
+MIKE 3 HD model of the Øresund strait between Denmark and Sweden. A 3D extension of the above MIKE 21 HD model of Oresund, with 3,320 elements covering ~2,000 km² for 2023–2025. Uses ERA5 meteorological forcing and DHI's DKBS model for boundary conditions. Validated against Copernicus and SMHI observations as well as satellite altimetry.
+
+![](https://raw.githubusercontent.com/DHI/WaterBench-MIKE3HD-Oresund/main/figures/geometry.png)
+
+> DHI. (2026). Hydrodynamic 3D model of the Øresund: MIKE3 model setup, outputs and observation data [Dataset]. Zenodo. [https://doi.org/10.5281/zenodo.20284684](https://doi.org/10.5281/zenodo.20284684)
+
+---
+
 ### MIKE21HD-HamburgElbeEstuary {#mike21hd-hamburgelbeestuary}
 
 [![](https://zenodo.org/badge/DOI/10.5281/zenodo.19740921.svg)](https://doi.org/10.5281/zenodo.19740921) [![](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/DHI/WaterBench-MIKE21HD-HamburgElbeEstuary)
