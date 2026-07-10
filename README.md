@@ -9,7 +9,7 @@ Website for overview of WaterBench cases. Uses [Quarto](https://quarto.org) for 
 
 The [`review-waterbench-case`](.github/skills/review-waterbench-case/SKILL.md) agent skill applies that spec to a cloned case repository and produces a markdown findings report. It works with any agent CLI that supports `.github/skills/` or `.claude/skills/` (Claude Code, GitHub Copilot CLI, etc.).
 
-## Draft downloader CLI (issue #15)
+## Downloader CLI
 
 This repository now includes a draft internal CLI for listing case names, showing case metadata, and downloading mirrored case files from Azure Blob Storage.
 
