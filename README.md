@@ -9,6 +9,24 @@ Website for overview of WaterBench cases. Uses [Quarto](https://quarto.org) for 
 
 The [`review-waterbench-case`](.github/skills/review-waterbench-case/SKILL.md) agent skill applies that spec to a cloned case repository and produces a markdown findings report. It works with any agent CLI that supports `.github/skills/` or `.claude/skills/` (Claude Code, GitHub Copilot CLI, etc.).
 
+## Draft downloader CLI (issue #15)
+
+This repository now includes a draft internal CLI for listing case names, showing case metadata, and downloading mirrored case files from Azure Blob Storage.
+
+Run it from the repository root:
+
+```bash
+./Waterbench list
+./Waterbench info MIKE21HD-HamburgElbeEstuary
+./Waterbench download MIKE21HD-Oresund /tmp --dry-run
+```
+
+Notes:
+
+- `list` and `info` read case metadata from `index.qmd`.
+- `download` uses the `https://dhiwaterbench.blob.core.windows.net/waterbench` mirror and creates `<target>/<case>/...`.
+- Use `--overwrite` to replace existing files.
+
 ## Instructions to add a new dataset
 
 In `index.qmd` do the following edits:
