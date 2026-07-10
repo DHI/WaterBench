@@ -204,8 +204,25 @@ def _safe_relative_blob_path(blob_name: str, prefix_name: str) -> Path:
     return Path(*rel_parts)
 
 
-def _download_blob(blob_name: str, prefix_name: str, target_root: Path, overwrite: bool) -> Path:
-    rel_path = _safe_relative_blob_path(blob_name, prefix_name)
+def _map_download_path(case_name: str, rel_path: Path) -> Path:
+    # Compatibility mapping: mirror keeps these two Oresund outputs at root,
+    # but the case layout expects them under output/.
+    if case_name.lower() == "mike21hd-oresund" and rel_path.as_posix() in {
+        "Area.dfsu",
+        "Points.dfs0",
+    }:
+        return Path("output") / rel_path
+    return rel_path
+
+
+def _download_blob(
+    blob_name: str,
+    prefix_name: str,
+    target_root: Path,
+    overwrite: bool,
+    relative_path: Path | None = None,
+) -> Path:
+    rel_path = relative_path if relative_path is not None else _safe_relative_blob_path(blob_name, prefix_name)
     output_path = target_root / rel_path
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
@@ -284,7 +301,8 @@ def cmd_download(args: argparse.Namespace) -> int:
     downloaded = 0
     skipped = 0
     for blob_name in blobs:
-        rel_path = _safe_relative_blob_path(blob_name, resolved_prefix)
+        raw_rel_path = _safe_relative_blob_path(blob_name, resolved_prefix)
+        rel_path = _map_download_path(case.name, raw_rel_path)
         output_path = target / rel_path
         if output_path.exists() and not args.overwrite:
             skipped += 1
@@ -297,7 +315,13 @@ def cmd_download(args: argparse.Namespace) -> int:
             continue
 
         try:
-            _download_blob(blob_name, resolved_prefix, target, args.overwrite)
+            _download_blob(
+                blob_name,
+                resolved_prefix,
+                target,
+                args.overwrite,
+                relative_path=rel_path,
+            )
             downloaded += 1
             print(f"ok   {rel_path}")
         except urllib.error.URLError as err:
