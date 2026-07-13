@@ -5,9 +5,7 @@ Website for overview of WaterBench cases. Uses [Quarto](https://quarto.org) for 
 
 ## Repository structure spec
 
-[`STRUCTURE.md`](STRUCTURE.md) defines the canonical structure that every WaterBench case repository follows — required directories and filenames, controlled vocabulary to prevent synonym drift across cases, README conventions, and the runnability requirements for model setups.
-
-The [`review-waterbench-case`](.github/skills/review-waterbench-case/SKILL.md) agent skill applies that spec to a cloned case repository and produces a markdown findings report. It works with any agent CLI that supports `.github/skills/` or `.claude/skills/` (Claude Code, GitHub Copilot CLI, etc.).
+The canonical structure every WaterBench case repository follows — required directories and filenames, controlled vocabulary, README conventions, and runnability requirements — along with the `review-waterbench-case` agent skill that checks a case against it, now live in [`DHI/WaterBench-template`](https://github.com/DHI/WaterBench-template) (`STRUCTURE.md` and `.github/skills/review-waterbench-case/`), the repo every new case is created from.
 
 ## Instructions to add a new dataset
 
